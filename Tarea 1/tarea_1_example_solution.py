@@ -19,8 +19,8 @@ def filtrar_vocales(cadena, bandera):
     Retorna:
     --------
     tuple : (código_estado, resultado_string)
-        - código_estado (int): 0 en éxito, o un código de error negativo.
-        - resultado_string (str u None): El string filtrado o None si hay error.
+        -código_estado (int): 0 en éxito, o un código de error negativo.
+        -resultado_string (str u None): El string filtrado o None si hay error
     """
     # 1. Verificar que la cadena sea un string
     if not isinstance(cadena, str):
@@ -83,7 +83,7 @@ def encontrar_extremos(lista_numeros):
         return -900, None, None
 
     # 4. Verificar que todos los elementos sean números (int o float)
-    #    Se verifica type(elem) is not bool porque bool hereda de int en Python.
+    #    Se verifica type(elem) is not bool porque bool hereda de int en Python
     for elem in lista_numeros:
         if type(elem) is bool or not isinstance(elem, (int, float)):
             return -700, None, None
