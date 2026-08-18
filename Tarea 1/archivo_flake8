@@ -1,7 +1,17 @@
-import os  # Error 1 (F401): Módulo importado pero nunca usado
+"""Módulo de prueba para verificar el cumplimiento del formato PEP 8."""
 
 
 def funcion_con_errores():
-    x = 10  # Error 2 (E225): Falta espacio alrededor del operador de asignación
-    cadena = "Esta es una linea de codigo excesivamente larga que supera de manera intencional el limite de ochenta caracteres permitido por las normas PEP 8"  # Error 3 (E501): Línea con más de 79 caracteres
+    """
+    Función de prueba corregida.
+
+    Retorna un valor entero sin violar las reglas de flake8.
+    """
+    x = 10
+    cadena = (
+        "Esta es una linea de codigo corregida que "
+        "no supera el limite de ochenta caracteres."
+    )
+    # Se utiliza la variable para evitar advertencias de variables no usadas
+    _ = cadena
     return x
