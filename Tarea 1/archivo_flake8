@@ -1,0 +1,7 @@
+import os  # Error 1 (F401): Módulo importado pero nunca usado
+
+
+def funcion_con_errores():
+    x = 10  # Error 2 (E225): Falta espacio alrededor del operador de asignación
+    cadena = "Esta es una linea de codigo excesivamente larga que supera de manera intencional el limite de ochenta caracteres permitido por las normas PEP 8"  # Error 3 (E501): Línea con más de 79 caracteres
+    return x
